@@ -1,1 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Insha Allah & Abdul Wakif | Wedding</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background: #fbf8f1;
+    color: #24483a;
+    text-align: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+/* =========================
+   MUSIC BUTTON
+========================= */
+
+.music-control {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    z-index: 9999;
+
+    width: 52px;
+    height: 52px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.92);
+
+    box-shadow: 0 4px 18px rgba(80,40,40,0.2);
+
+    font-size: 23px;
+
+    cursor: pointer;
+
+    transition: transform 0.3s;
+}
+
+.music-control:active {
+    transform: scale(0.85);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 20px;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(255,248,248,0.84),
+            rgba(255,248,248,0.94)
+        ),
+        url("photo1.jpg") center/cover;
+}
+
+.small-title {
+
+    font-size: 15px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(55px, 15vw, 110px);
+    font-weight: 400;
+    color: #24483a;
+    line-height: 1.1;
+    text-shadow: 0 3px 8px rgba(36, 72, 58, 0.18);
+}
+
+.ampersand {
+
+    font-size: 45px;
+
+    margin: 10px 0;
+
+    font-style: italic;
+}
+
+.date {
+
+    margin-top: 28px;
+
+    font-size: 20px;
+
+    letter-spacing: 3px;
+}
+
+.venue {
+
+    margin-top: 12px;
+
+    font-size: 15px;
+}
+
+.divider {
+
+    width: 75px;
+
+    height: 1px;
+
+    margin: 28px auto;
+
+    background: #9c7068;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+
+    padding: 75px 20px;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    position: relative;
+}
+
+section h2 {
+
+    font-size: 34px;
+
+    font-weight: normal;
+
+    margin-bottom: 18px;
+}
+
+section p {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+.countdown {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+    margin-top: 35px;
+}
+
+.time-box {
+
+    min-width: 75px;
+
+    padding: 18px 10px;
+
+    border: 1px solid #d9bbb7;
+
+    border-radius: 14px;
+
+    background: rgba(255,255,255,0.8);
+
+    box-shadow: 0 5px 20px rgba(80,40,40,0.07);
+}
+
+.time-box span {
+
+    display: block;
+
+    font-size: 30px;
+
+    font-weight: bold;
+}
+
+.time-box small {
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 55px;
+    margin-top: 50px;
+}
+
+.gallery img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+
+    clip-path: polygon(
+        50% 95%,
+        5% 50%,
+        5% 30%,
+        10% 15%,
+        25% 5%,
+        40% 8%,
+        50% 20%,
+        60% 8%,
+        75% 5%,
+        90% 15%,
+        95% 30%,
+        95% 50%,
+        50% 95%
+    );
+
+    filter: drop-shadow(0 8px 12px rgba(80,40,40,0.20));
+    transition: transform 0.4s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.08);
+} 
+
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+.button {
+
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    color: white;
+
+    background: #68433e;
+
+    font-size: 15px;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.button:active {
+
+    transform: scale(0.95);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    padding: 45px 20px;
+
+    background: #432b2b;
+
+    color: white;
+}
+
+.heart {
+
+    font-size: 30px;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.floating-heart {
+
+    position: fixed;
+
+    pointer-events: none;
+
+    z-index: 9998;
+
+    font-size: 20px;
+
+    animation: floatHeart 3s ease-out forwards;
+}
+
+@keyframes floatHeart {
+
+    0% {
+
+        transform:
+            translateY(0)
+            scale(0.7)
+            rotate(0deg);
+
+        opacity: 1;
+    }
+
+    100% {
+
+        transform:
+            translateY(-180px)
+            scale(1.5)
+            rotate(25deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   TOUCH SPARKLES
+========================= */
+
+.touch-heart {
+
+    position: fixed;
+
+    pointer-events: none;
+
+    z-index: 10000;
+
+    animation: touchAnimation 1.8s ease-out forwards;
+}
+
+@keyframes touchAnimation {
+
+    0% {
+
+        opacity: 1;
+
+        transform:
+            translate(-50%, -50%)
+            scale(0.5)
+            rotate(0deg);
+    }
+
+    100% {
+
+        opacity: 0;
+
+        transform:
+            translate(
+                calc(-50% + var(--x)),
+                calc(-50% - 120px)
+            )
+            scale(1.6)
+            rotate(20deg);
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    section {
+
+        padding: 60px 18px;
+    }
+
+    section h2 {
+
+        font-size: 29px;
+    }
+
+    .gallery img {
+
+        height: 260px;
+    }
+
+    .music-control {
+
+        width: 48px;
+
+        height: 48px;
+
+        top: 12px;
+
+        right: 12px;
+    }
+}
+/* =========================================
+   ISLAMIC FLORAL WEDDING DECORATION
+   ========================================= */
+
+/* Elegant overall background */
+body {
+    background:
+        radial-gradient(circle at 10% 15%, rgba(201, 166, 107, 0.10) 0 2px, transparent 3px),
+        radial-gradient(circle at 90% 85%, rgba(201, 166, 107, 0.10) 0 2px, transparent 3px),
+        #fbf8f1;
+}
+
+/* Decorative Islamic-style border */
+.hero {
+    border: 1px solid rgba(183, 150, 95, 0.35);
+    box-shadow:
+        inset 0 0 0 8px rgba(255,255,255,0.20),
+        inset 0 0 0 10px rgba(183,150,95,0.10);
+    overflow: hidden;
+}
+
+/* Floral corner decorations */
+.hero::before,
+.hero::after {
+    position: absolute;
+    z-index: 1;
+    font-family: Georgia, serif;
+    color: rgba(183, 150, 95, 0.65);
+    font-size: 55px;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.hero::before {
+    content: "❦";
+    top: 22px;
+    left: 22px;
+    transform: rotate(-25deg);
+}
+
+.hero::after {
+    content: "❦";
+    bottom: 22px;
+    right: 22px;
+    transform: rotate(155deg);
+}
+
+/* Keep all wedding text above decorations */
+.hero > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Elegant decorative line */
+.hero .small-title::before {
+    content: "❁  ✦  ❁";
+    display: block;
+    font-size: 18px;
+    letter-spacing: 6px;
+    color: #b7965f;
+    margin-bottom: 18px;
+}
+
+/* Decorative divider under the names */
+h1::after {
+    content: "❦";
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #b7965f;
+    margin: 18px auto 0;
+}
+
+/* More elegant date styling */
+.hero .date,
+.hero .wedding-date {
+    letter-spacing: 5px;
+    color: #24483a;
+}
+
+/* Soft golden glow around the main names */
+h1 {
+    text-shadow:
+        0 3px 8px rgba(36,72,58,0.18),
+        0 0 18px rgba(183,150,95,0.12);
+}
+
+/* Islamic geometric-inspired pattern at the bottom */
+.hero {
+    background-image:
+        linear-gradient(
+            rgba(255,248,248,0.86),
+
+
+/* ===== WEDDING DECORATION ===== */
+
+body {
+    background:
+        radial-gradient(circle at 10% 10%, rgba(190,150,90,.18), transparent 120px),
+        radial-gradient(circle at 90% 90%, rgba(190,150,90,.18), transparent 120px),
+        #fbf8f1;
+}
+
+/* Elegant frame around the invitation */
+.hero {
+    border: 2px solid rgba(183,150,95,.45);
+    box-shadow:
+        inset 0 0 0 7px rgba(255,255,255,.45),
+        inset 0 0 0 9px rgba(183,150,95,.18);
+}
+
+/* Top and bottom floral ornaments */
+.hero::before {
+    content: "❦";
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 55px;
+    color: #b7965f;
+    opacity: .65;
+    z-index: 3;
+}
+
+.hero::after {
+    content: "❦";
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    font-size: 55px;
+    color: #b7965f;
+    opacity: .65;
+    transform: rotate(180deg);
+    z-index: 3;
+}
+
+/* Decorative flowers around heading */
+.small-title::before {
+    content: "✦  ❁  ✦";
+    display: block;
+    color: #b7965f;
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+/* Decorative divider */
+h1::after {
+    content: "❦";
+    display: block;
+    color: #b7965f;
+    font-size: 30px;
+    margin: 15px auto;
+}
+
+/* Elegant names */
+h1 {
+    text-shadow:
+        0 3px 8px rgba(36,72,58,.18),
+        0 0 15px rgba(183,150,95,.15);
+}
+
+/* Date */
+.date,
+.wedding-date {
+    color: #24483a;
+    letter-spacing: 5px;
+}
+
+/* Golden decorative line */
+.hero .date::before {
+    content: "────  ✦  ────";
+    display: block;
+    color: #b7965f;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+/* Small corner dots */
+.hero {
+    position: relative;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 4;
+}            
+
+/* ===== SOFT FALLING LEAVES ===== */
+
+.falling-leaves {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.falling-leaf {
+    position: absolute;
+        display: block;
+    z-index: 1000;
+    top: -30px;
+    left: 10%;
+    width: 14px;
+    height: 8px;
+    background: rgba(92, 120, 91, 0.45);
+    border-radius: 100% 0 100% 0;
+    animation: leafFall 10s linear infinite;
+}
+
+.falling-leaf:nth-child(1) {
+    left: 8%;
+    animation-delay: 0s;
+}
+
+.falling-leaf:nth-child(2) {
+    left: 20%;
+    animation-delay: 2s;
+}
+
+.falling-leaf:nth-child(3) {
+    left: 32%;
+    animation-delay: 4s;
+}
+
+.falling-leaf:nth-child(4) {
+    left: 44%;
+    animation-delay: 1s;
+}
+
+.falling-leaf:nth-child(5) {
+    left: 56%;
+    animation-delay: 5s;
+}
+
+.falling-leaf:nth-child(6) {
+    left: 68%;
+    animation-delay: 3s;
+}
+
+.falling-leaf:nth-child(7) {
+    left: 80%;
+    animation-delay: 7s;
+}
+
+.falling-leaf:nth-child(8) {
+    left: 92%;
+    animation-delay: 6s;
+}
+
+@keyframes leafFall {
+    0% {
+        transform: translateY(-40px) translateX(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: translateY(50vh) translateX(45px) rotate(180deg);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateY(110vh) translateX(-35px) rotate(360deg);
+        opacity: 0;
+    }
+                      }
+/* ===== VISIBLE FALLING LEAVES FIX ===== */
+
+.falling-leaves {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999 !important;
+}
+
+.falling-leaf {
+    position: fixed !important;
+    display: block !important;
+    width: 18px !important;
+    height: 11px !important;
+    background: #718b68 !important;
+    border-radius: 100% 0 100% 0 !important;
+    top: 100px !important;
+    animation: leafFall12 7s linear infinite !important;
+}
+
+.falling-leaf:nth-child(1) { left: 5%; animation-delay: 0s; }
+.falling-leaf:nth-child(2) { left: 18%; animation-delay: 1s; }
+.falling-leaf:nth-child(3) { left: 32%; animation-delay: 2s; }
+.falling-leaf:nth-child(4) { left: 46%; animation-delay: 3s; }
+.falling-leaf:nth-child(5) { left: 60%; animation-delay: 4s; }
+.falling-leaf:nth-child(6) { left: 74%; animation-delay: 5s; }
+.falling-leaf:nth-child(7) { left: 87%; animation-delay: 1.5s; }
+.falling-leaf:nth-child(8) { left: 95%; animation-delay: 3.5s; }
+
+@keyframes leafFall2 {
+    0% {
+        top: -30px;
+        transform: translateX(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(60px) rotate(180deg);
+        opacity: 1;
+    }
+    100% {
+        top: 105vh;
+        transform: translateX(-40px) rotate(360deg);
+        opacity: 0;
+    }
+}
+</style>
+    
+</head>
+
+
+<body>
+<!-- FALLING LEAVES -->
+<div class="falling-leaves">
+    <span class="falling-leaf"></span>
+    <span class="falling-leaf"></span>
+    <span class="falling-leaf"></span>
+    <span class="falling-leaf"></span>
+    <span class="falling-leaf"></span>
+    <span class="falling-leaf"></span>
+    <span class="falling-leaf"></span>
+    <span class="falling-leaf"></span>
+</div>
+
+<!-- =========================
+     MUSIC
+========================= -->
+
+<button
+    class="music-control"
+    onclick="toggleMusic()"
+    id="musicButton">
+
+    🎵
+
+</button>
+
+<audio id="weddingMusic" loop>
+
+    <source
+        src="wedding-music.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<header class="hero">
+
+    <div class="small-title">
+        We're getting married
+    </div>
+
+    <h1>Insha allah</h1>
+
+    <div class="ampersand">
+        &amp;
+    </div>
+
+    <h1>Abdul Wakif</h1>
+
+    <div class="divider"></div>
+
+    <div class="date">
+        05 • 09 • 2026
+    </div>
+
+    <div class="venue">
+        1:00 PM · Grand Auditorium Idiyangara
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     COUNTDOWN
+========================= -->
+
+<section>
+
+    <h2>
+        Counting Down to Our Day
+    </h2>
+
+    <p>
+        We can't wait to celebrate
+        this beautiful day with you. ❤️
+    </p>
+
+    <div class="countdown">
+
+        <div class="time-box">
+            <span id="days">0</span>
+            <small>DAYS</small>
+        </div>
+
+        <div class="time-box">
+            <span id="hours">0</span>
+            <small>HOURS</small>
+        </div>
+
+        <div class="time-box">
+            <span id="minutes">0</span>
+            <small>MINUTES</small>
+        </div>
+
+        <div class="time-box">
+            <span id="seconds">0</span>
+            <small>SECONDS</small>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     WEDDING
+========================= -->
+
+<section>
+
+    <h2>
+        The Wedding
+    </h2>
+
+    <div class="divider"></div>
+
+    <p>
+
+        <strong>
+            Insha Allah
+        </strong>
+
+        <br>
+
+        ❤️
+
+        <br>
+
+        <strong>
+            Abdul Wakif Faizy
+        </strong>
+
+    </p>
+
+    <br>
+
+    <p>
+
+        Saturday,
+        5 September 2026
+
+        <br>
+
+        1:00 PM
+
+    </p>
+
+    <br>
+
+    <p>
+
+        Grand Auditorium Idiyangara
+
+        <br>
+
+        Idiyangara
+
+    </p>
+
+</section>
+
+
+
+<!-- =========================
+     PHOTOS
+========================= -->
+
+<section>
+
+    <h2>
+        Our Memories
+    </h2>
+
+    <p>
+        Some beautiful moments
+        from our journey. 💕
+    </p>
+
+    <div class="gallery">
+
+        <img
+            src="IMG-20260322-WA0111.jpg"
+            alt="Insha Allah and Abdul Wakif">
+
+        <img
+            src="IMG-20260322-WA0128.jpg"
+            alt="Wedding memory">
+
+        <img
+            src="IMG-20260322-WA0102.jpg"
+            alt="Wedding memory">
+
+        <img
+            src="IMG-20260322-WA0123.jpg"
+            alt="Wedding memory">
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     LOCATION
+========================= -->
+
+<section>
+
+    <h2>
+        Find Us
+    </h2>
+
+    <div class="divider"></div>
+
+    <p>
+
+        Grand Auditorium Idiyangara
+
+        <br>
+
+        Idiyangara
+
+    </p>
+
+    <div class="buttons">
+
+        <a
+            class="button"
+            href="https://www.google.com/maps/search/?api=1&query=Grand+Auditorium+Idiyangara"
+            target="_blank">
+
+            📍 Open Google Maps
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     WHATSAPP
+========================= -->
+
+<section>
+
+    <h2>
+        Get in Touch
+    </h2>
+
+    <p>
+        We'd love to hear from you. 💗
+    </p>
+
+    <div class="buttons">
+
+        <a
+            class="button"
+            href="https://wa.me/919746319305"
+            target="_blank">
+
+            💬 WhatsApp Us
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     MUSIC SECTION
+========================= -->
+
+<section>
+
+    <h2>
+        A Little Music
+    </h2>
+
+    <p>
+        Tap 🎵 at the top to play our music.
+    </p>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="heart">
+        ❤️
+    </div>
+
+    <p>
+        Insha Allah &amp; Abdul Wakif
+    </p>
+
+    <br>
+
+    <p>
+        05 September 2026
+    </p>
+
+    <br>
+
+    <p>
+        Forever begins here ✨
+    </p>
+
+</footer>
+
+
+
+<script>
+
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+const weddingDate =
+    new Date(
+        "September 5, 2026 13:00:00+05:30"
+    ).getTime();
+
+
+function updateCountdown() {
+
+    const now =
+        new Date().getTime();
+
+    const distance =
+        weddingDate - now;
+
+
+    if (distance <= 0) {
+
+        document.getElementById("days")
+            .innerHTML = "0";
+
+        document.getElementById("hours")
+            .innerHTML = "0";
+
+        document.getElementById("minutes")
+            .innerHTML = "0";
+
+        document.getElementById("seconds")
+            .innerHTML = "0";
+
+        return;
+    }
+
+
+    const days =
+        Math.floor(
+            distance /
+            (1000 * 60 * 60 * 24)
+        );
+
+
+    const hours =
+        Math.floor(
+            (distance /
+            (1000 * 60 * 60)) % 24
+        );
+
+
+    const minutes =
+        Math.floor(
+            (distance /
+            (1000 * 60)) % 60
+        );
+
+
+    const seconds =
+        Math.floor(
+            (distance / 1000) % 60
+        );
+
+
+    document.getElementById("days")
+        .innerHTML = days;
+
+    document.getElementById("hours")
+        .innerHTML = hours;
+
+    document.getElementById("minutes")
+        .innerHTML = minutes;
+
+    document.getElementById("seconds")
+        .innerHTML = seconds;
+}
+
+
+setInterval(
+    updateCountdown,
+    1000
+);
+
+updateCountdown();
+
+
+
+/* =========================
+   MUSIC
+========================= */
+
+let musicPlaying = false;
+
+
+function toggleMusic() {
+
+    const music =
+        document.getElementById(
+            "weddingMusic"
+        );
+
+    const button =
+        document.getElementById(
+            "musicButton"
+        );
+
+
+    if (musicPlaying) {
+
+        music.pause();
+
+        button.innerHTML = "🎵";
+
+        musicPlaying = false;
+
+    } else {
+
+        music.play();
+
+        button.innerHTML = "⏸️";
+
+        musicPlaying = true;
+    }
+}
+
+
+
+/* =========================
+   TOUCH HEARTS
+========================= */
+
+const loveEmojis = [
+    "❤️",
+    "💕",
+    "💗",
+    "💖",
+    "💘",
+    "💝",
+    "💞",
+    "🌹",
+    "✨",
+    "🥰"
+];
+
+
+function createTouchHeart(x, y) {
+
+    const heart =
+        document.createElement("div");
+
+    heart.className =
+        "touch-heart";
+
+
+    heart.innerHTML =
+        loveEmojis[
+            Math.floor(
+                Math.random() *
+                loveEmojis.length
+            )
+        ];
+
+
+    heart.style.left =
+        x + "px";
+
+    heart.style.top =
+        y + "px";
+
+
+    heart.style.setProperty(
+        "--x",
+        ((Math.random() - 0.5) * 100) + "px"
+    );
+
+
+    document.body.appendChild(
+        heart
+    );
+
+
+    setTimeout(
+        () => heart.remove(),
+        1800
+    );
+}
+
+
+/* PHONE TOUCH */
+
+document.addEventListener(
+    "touchstart",
+    function(event) {
+
+        const touch =
+            event.touches[0];
+
+        createTouchHeart(
+            touch.clientX,
+            touch.clientY
+        );
+
+    },
+    { passive: true }
+);
